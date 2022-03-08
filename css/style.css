@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+:root{
+   --primary-color:#047aed;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -36,7 +40,7 @@ img{
 }
 
 .navbar{
-    background-color: #047aed;
+    background-color:var(--primary-color);
     color:#fff;
     height: 70px;
 
@@ -49,20 +53,78 @@ img{
 
 }
 
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    
+}
+
 .links{
     display: flex;
+}
+
+.links a:hover{
+    border-bottom: 2px #fff solid;
 }
 
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    overflow: auto;
+    /*overflow: auto; */
     padding: 0 40px;
 }
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
+}
+/* styles showcase*/
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 2.5em;
+
+}
+
+.showcase p{
+    margin:  20px 0;
+}
+
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+    overflow: visible;
+}
+
+.showcase-form{
+    position: relative;
+    height: 350px;
+    top: 60px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: #fff;
+    color:#333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
 }
