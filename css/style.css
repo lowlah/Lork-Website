@@ -456,6 +456,11 @@ code,pre{
     
 }
 
+
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
 .my-1{
     margin: 1rem 0;
 }
